@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.col-1, .col-2 {
+    background-color:white;
+    
+}
+
+
+hr {
+    border: 3px solid gray;
+    border-top: none;
+    margin: 25px auto 0;
+}
+
+.professional-info {
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 2.5rem !important;
+}
+
+h3 {
+    font-weight: 500 !important;
+    font-size: 1.4rem !important;
+}
+
+img.responsive-img, video.responsive-video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 56px;
+}
+
+li {
+    list-style-type: none;
+}

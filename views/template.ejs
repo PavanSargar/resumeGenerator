@@ -1,0 +1,79 @@
+<%- include("templateheader") -%>
+
+
+  <body>
+    <div id="template" class="container main">
+      <div class="row center-align">
+        <div class="col s12 l4 m4 col-1">
+          <img
+            class="responsive-img"
+            src="<%= imageURL %>"
+            height="130px"
+            width="130px"
+          />
+
+          <hr />
+
+          <div class="left-align contact-details">
+            <h3>Get in Touch!</h3>
+            <h6>Mobile:</h6>
+            <a href="#"> <%= number %> </a>
+
+            <h6>Email:</h6>
+            <a href="#"><%= emailId %></a>
+
+            <h6>Address:</h6>
+            <address><%= userAddress %></address>
+
+            <h6><a href="<%=linkedinURL %>">LinkedIn</a></h6>
+
+            <hr />
+          </div>
+
+          <div class="left-align">
+            <h3>Hobbies:</h3>
+            <% for (var i=0; i < hobbyList.length; i++) { %>
+            <li><%= hobbyList[i] %></li>
+            <% } %>
+
+            <h3>Langauges Spoken:</h3>
+            <% for (var i=0; i < langList.length; i++) { %>
+            <li><%= langList[i] %></li>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="col s12 l8 m8 col-2">
+          <div class="left-align professional-info">
+            <h1><%= fullName %></h1>
+            <h3>Objective:</h3>
+            <p><%= summaryPara %></p>
+            <hr />
+
+            <h3>Skills:</h3>
+            <% for (var i=0; i < skillsList.length; i++) { %>
+            <li><%= skillsList[i] %></li>
+            <% } %>
+
+            <hr />
+
+            <h3>Academic Qualifications:</h3>
+            <% for (var i=0; i < educationList.length; i++) { %>
+            <li><%= educationList[i] %></li>
+            <% } %>
+
+            <hr />
+
+            <h3>Employment History:</h3>
+            <% for (var i=0; i < empHistory.length; i++) { %>
+            <li><%= empHistory[i] %></li>
+            <% } %>
+          </div>
+        </div>
+        <button class="btn waves-effect red lighten-1" id="save-btn">
+          Download
+        </button>
+      </div>
+    </div>
+
+<%- include("templatefooter") -%>

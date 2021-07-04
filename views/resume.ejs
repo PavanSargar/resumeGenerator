@@ -1,0 +1,174 @@
+<%- include("resumeheader") -%>
+
+<section id="navbar">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+        ><i class="material-icons">menu</i></a
+      >
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Source Code</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Source Code</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</section>
+
+<section id="main">
+  <form action="/" method="post">
+    <div class="container container1 center-align">
+      <h1 class="z-depth-2">Resume Generator</h1>
+      <div class="row">
+        <div class="col s12 m6 l6 col-1">
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">image</i>
+            <input
+              name="imageURL"
+              id="imageURL"
+              type="text"
+              class="validate active"
+            />
+            <label class="active" for="imageURL">Image Link</label>
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input
+              name="fullName"
+              id="fullName"
+              type="text"
+              class="validate active"
+            />
+            <label class="active" for="fullName">Full Name</label>
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">phone</i>
+            <input
+              name="mobileNum"
+              id="icon_telephone"
+              type="tel"
+              class="validate active"
+            />
+            <label class="active" for="icon_telephone">Telephone</label>
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">email</i>
+            <input id="email" name="emailId" type="email" class="validate" />
+            <label class="active" for="email">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right"
+              >Helper text</span
+            >
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">address</i>
+            <input
+              id="address"
+              name="userAddress"
+              type="text"
+              class="validate active"
+            />
+            <label class="active" for="address">Address</label>
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">description</i>
+            <textarea
+              name="summaryPara"
+              id="textarea1"
+              class="materialize-textarea"
+            ></textarea>
+            <label class="active" for="textarea1">Summary Paragrph</label>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l6 col-2">
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">loupe</i>
+            <textarea
+              name="skillItems"
+              id="textarea3"
+              data-position="bottom"
+              data-tooltip="separate with ','"
+              class="materialize-textarea tooltipped"
+            ></textarea>
+            <label class="active" for="textarea3">Skills</label>
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">accessibility</i>
+            <textarea
+              name="newHobbyItems"
+              id="textarea4"
+              data-position="bottom"
+              data-tooltip="separate with ','"
+              class="materialize-textarea tooltipped"
+            ></textarea>
+            <label class="active" for="textarea4">Hobbies</label>
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">language</i>
+            <textarea
+              name="langKnown"
+              id="textarea5"
+              data-position="bottom"
+              data-tooltip="separate with ','"
+              class="materialize-textarea tooltipped"
+            ></textarea>
+            <label class="active" for="textarea5">Languages Known</label>
+          </div>
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">school</i>
+            <textarea
+              name="educationList"
+              id="textarea6"
+              data-position="bottom"
+              data-tooltip="separate with ','"
+              class="materialize-textarea tooltipped"
+            ></textarea>
+            <label class="active" for="textarea6">Education</label>
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">work</i>
+            <textarea
+              name="employmentHistory"
+              id="textarea2"
+              data-position="bottom"
+              data-tooltip="separate with ','"
+              class="materialize-textarea tooltipped"
+            ></textarea>
+            <label class="active" for="textarea2">Employment History</label>
+          </div>
+
+          <div class="col s12 input-field">
+            <i class="material-icons prefix">insert_link</i>
+            <input name="linkedinURL" id="url" type="text" class="validate" />
+            <label class="active" for="url">Linkedin URL</label>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="btn waves-effect red lighten-1"
+        type="submit"
+        name="action"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</section>
+
+<%- include("resumefooter") -%>
